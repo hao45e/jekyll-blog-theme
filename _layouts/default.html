@@ -1,12 +1,46 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    {% include navigation.html %}
-    {{ content }}
-  </body>
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+                {% include navigation.html %}
+          
+                <div class="off-canvas-content" data-off-canvas-content>
+                    <div class="my-content">
+                        <div class="title-bar hide-for-large">
+                            <div class="title-bar-left">
+                                <button class="menu-icon" type="button" data-open="my-info"></button>
+                                <span class="title-bar-title">Mike Mikerson</span>
+                            </div>
+                        </div>
+                        <div class="callout primary">
+                            <div class="row column">
+                                <h1>Hello! This is the portfolio of a very witty person.</h1>
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="row small-up-2 medium-up-3 large-up-4">
+                            {{ content }}
+                        </div>
+                    </div>
+          
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
 </html>

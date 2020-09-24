@@ -1,3 +1,39 @@
 .current {
     color: green;
 }
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.off-canvas, .off-canvas-content {
+    background: none !important;
+}
+.background-image {
+    background: url(/assets/images/background/bgimg.png);
+    background-size: 100% 100%;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.my-navigation {
+    width: 80%;
+    height: 90%;
+    margin: 10% 10% 10% 10%;
+    padding: 5% 5% 5% 5%;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 25px;
+}
+.my-content {
+    min-height: 90vh;
+    margin: 2% 2% 2% 2%;
+    padding: 3% 3% 3% 3%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
