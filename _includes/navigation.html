@@ -1,14 +1,14 @@
 <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
     <div class="row column my-navigation">
         <div style="width: 80%; margin: 0 auto;">
-            <img class="thumbnail" src="{{ site.data.info.avatar }}" style="border-radius: 50%;">
+            <img class="thumbnail" src="{{ site.baseurl }}{{ site.data.info.avatar }}" style="border-radius: 50%;">
         </div>
         <h6 class="text-center">{{ site.data.info.nickname }}</h6>
         <nav>
             <ul>
                 {% for item in site.data.navigation %}
                 <li class="text-center" style="margin-left: 10%; margin-right: 10%;">
-                <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+                <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
                     {{ item.name }}
                 </a>
                 </li>
