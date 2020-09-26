@@ -1,19 +1,29 @@
 <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
     <div class="row column my-navigation">
-        <div style="width: 80%; margin: 0 auto;">
-            <img class="thumbnail" src="{{ site.baseurl }}{{ site.data.info.avatar }}" style="border-radius: 50%;">
+        <div style="width: 80%; height: 0px; margin: 0 auto; padding-bottom: 100%; position:relative;">
+            <img class="thumbnail" src="{{ site.baseurl }}{{ site.data.info.avatar }}" style="border-radius: 50%; position: absolute; width: 100%; height: 80%;">
         </div>
-        <h6 class="text-center">{{ site.data.info.nickname }}</h6>
-        <nav>
-            <ul>
-                {% for item in site.data.navigation %}
-                <li class="text-center" style="margin-left: 10%; margin-right: 10%;">
-                <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-                    {{ item.name }}
-                </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
+        <div>
+            <h5 class="text-center">{{ site.data.info.nickname }}</h5>
+        </div>
+        <div>
+            <nav style="margin-top: 7vh;">
+                <ul>
+                    {% for item in site.data.navigation %}
+                    <a href="{{ site.baseurl }}{{ item.link }}">
+                        <li class="text-center my-navigation-li {% if page.url == item.link %}my-navigation-selected{% endif %}">
+                            {{ item.name }}
+                        </li>
+                    </a>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div style="margin-top: 28vh;">
+            <div>
+                <h6 class="text-center gary">{{ site.data.info.signature }}</h6>
+            </div>
+            {% include contact.html %}
+        </div>
     </div>
 </div>
