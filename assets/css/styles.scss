@@ -1,8 +1,14 @@
 ---
 ---
+// 自定义样式
 @import "main";
+// foundation
 @import "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css";
+// (foundation) A Sass library for creating flexible CSS transitions and animations.
+@import "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css";
+// FontAwesome
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css";
+// 滚动条
+@import "https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css";
