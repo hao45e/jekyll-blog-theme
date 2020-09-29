@@ -7,7 +7,14 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     </head>
     <body>
-        <div class="my-background-image" style="background: url({{ site.baseurl }}/assets/images/background/bgimg.png);"></div>
+        <div id="my-background-image" class="my-background-image" style="background: url();"></div>
+        <script>
+            window.onload = function(){
+                var bgImg = document.getElementById("my-background-image");
+                var bgImgUrl = "{{ site.baseurl }}"+"/assets/images/background/bgimg.png";
+                bgImg.style.background="url("+bgImgUrl+")";
+            };
+        </script>
         <div class="off-canvas-wrapper">
             <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
