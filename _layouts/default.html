@@ -14,7 +14,7 @@ layout: compress
         <script>
             window.onload = function(){
                 var bgImg = document.getElementById("my-background-image");
-                var bgImgUrl = "{% link /assets/images/background/bgimg.png %}";
+                var bgImgUrl = "{{ site.baseurl }}/assets/images/background/bgimg.png";
                 bgImg.style.background="url("+bgImgUrl+")";
             };
         </script>
