@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html class="no-js" lang="zh-cn">
     <head>
@@ -7,11 +10,11 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     </head>
     <body>
-        <div id="my-background-image" class="my-background-image" style="background: url();"></div>
+        <div id="my-background-image" class="my-background-image"></div>
         <script>
             window.onload = function(){
                 var bgImg = document.getElementById("my-background-image");
-                var bgImgUrl = "{{ site.baseurl }}"+"/assets/images/background/bgimg.png";
+                var bgImgUrl = "{% link /assets/images/background/bgimg.png %}";
                 bgImg.style.background="url("+bgImgUrl+")";
             };
         </script>

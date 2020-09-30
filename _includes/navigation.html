@@ -16,15 +16,13 @@
         </div>
         <div>
             <nav style="margin-top: 7vh;">
-                <ul>
-                    {% for item in site.data.navigation %}
-                    <a href="{{ site.baseurl }}{{ item.link }}">
-                        <li class="text-center my-navigation-li {% if page.url == item.link %}my-navigation-selected{% endif %}">
-                            {{ item.name }}
-                        </li>
+                {% for item in site.data.navigation %}
+                <li class="text-center my-navigation-li {% if page.pageType == item.pageType %}my-navigation-selected{% endif %}">
+                    <a href="{{ site.baseurl }}{{ item.link }}" style="display: block;">
+                        {{ item.name }}
                     </a>
-                    {% endfor %}
-                </ul>
+                </li>
+                {% endfor %}
             </nav>
         </div>
         <div style="margin-top: 28vh;">

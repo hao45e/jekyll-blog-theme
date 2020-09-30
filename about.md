@@ -1,5 +1,6 @@
 ---
 layout: default
+pageType: about
 title: About
 ---
 # About page

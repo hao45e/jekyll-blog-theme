@@ -1,6 +1,9 @@
 - name: 主页
+  pageType: index
   link: /
 - name: 关于
+  pageType: about
   link: /about.html
 - name: 博客
+  pageType: blog
   link: /blog.html
