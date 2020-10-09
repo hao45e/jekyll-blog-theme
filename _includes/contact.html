@@ -1,17 +1,7 @@
 <div class="text-center my-contact">
-    <a href="https://hao45e.github.io" target="_blank" title="Home">
-        <i class="fas fa-home"></i>
+    {% for item in site.data.info.contact %}
+    <a href="{{ item.link }}" data-tooltip title="{{ item.title }}" style="cursor: pointer; border: 0;">
+        <i class="{{ item.icon }}"></i>
     </a>
-    <a href="https://github.com/hao45e" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://hao45e.github.io/blog/" target="_blank" title="Blog">
-        <i class="fas fa-blog"></i>
-    </a>
-    <a href="https://wpa.qq.com/msgrd?v=3&uin=1220202232&site=qq&menu=yes" target="_blank" title="QQ">
-        <i class="fab fa-qq"></i>
-    </a>
-    <a href="javascript:void(0);" title="Telegram">
-        <i class="fab fa-telegram"></i>
-    </a>
+    {% endfor %}
 </div>

@@ -1,8 +1,4 @@
-ul {
-    padding: 0px;
-    margin: 0px;
-}
-nav li {
+li {
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -61,4 +57,21 @@ nav li {
 }
 .my-contact a:hover {
     color: black;
+}
+.my-categories {
+    margin: 10%;
+    padding: 10%;
+    border-radius: 15px;
+    background-color:rgba(0,0,0,0.15);
+    text-align: center;
+    color: #656565;
+}
+.my-to-top-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #00ccff;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
 }

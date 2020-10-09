@@ -1,5 +1,27 @@
+# 昵称
 nickname: 神之浩
+# 个签
 signature: 世界之大
 
+# GitHub用户名
 github:
   username: hao45e
+
+# 联系方式
+contact:
+  - title: Home
+    icon: "fas fa-home"
+    link: https://hao45e.github.io
+    target: "_blank"
+  - title: GitHub
+    icon: "fab fa-github"
+    link: https://hao45e.github.io/blog/
+    target: "_blank"
+  - title: QQ
+    icon: "fab fa-qq"
+    link: https://wpa.qq.com/msgrd?v=3&uin=1220202232&site=qq&menu=yes
+    target: "_blank"
+  - title: Telegram
+    icon: "fab fa-telegram"
+    link: javascript:void(0);
+    target: "_self"

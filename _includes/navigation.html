@@ -25,7 +25,19 @@
                 {% endfor %}
             </nav>
         </div>
-        <div style="margin-top: 28vh;">
+        <div class="my-categories">
+            <h6>分类</h6>
+            <div>
+                {% for cat in site.categories %}
+                    <li class="text-center my-navigation-li {% if page.categories contains cat[0] %}my-navigation-selected{% endif %}">
+                        <a href="{{ site.baseurl }}/categories.html#{{ cat[0] }}" style="display: block; font-size: smaller;" data-close="my-info">
+                            {{ cat[0] }} ({{ cat[1].size }})
+                        </a>
+                    </li>
+                {% endfor %}
+            </div>
+        </div>
+        <div style="margin-top: 14vh;">
             <div>
                 <h6 class="text-center gary">{{ site.data.info.signature }}</h6>
             </div>

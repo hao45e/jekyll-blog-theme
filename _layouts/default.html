@@ -25,7 +25,7 @@ layout: compress
           
                 <div class="off-canvas-content" data-off-canvas-content>
                     <div class="my-content">
-                        <div class="title-bar hide-for-large">
+                        <div class="title-bar hide-for-large" style="border-radius: 15px;">
                             <div class="title-bar-left">
                                 <button class="menu-icon" type="button" data-open="my-info"></button>
                                 <span class="title-bar-title">{{ page.title }}</span>
@@ -34,20 +34,27 @@ layout: compress
                         <div class="row small-up-2 medium-up-3 large-up-4">
                             {{ content }}
                         </div>
+                        <div class="button my-to-top-button" data-tooltip title="返回顶部" data-position="left" data-alignment="center"><i class="fa fa-arrow-up"></i></div>
                     </div>
           
                 </div>
             </div>
         </div>
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script>
+            /* foundation初始化 */
             $(document).foundation();
+            /* 左侧导航栏的滚动条 */
             $("#my-info").mCustomScrollbar({
                 theme:"minimal-dark"
+            });
+            /* 返回顶部 */
+            $(document).on("click", ".my-to-top-button", function(){
+                $("html,body").animate({scrollTop:"0px"},200);
             });
         </script>
     </body>
