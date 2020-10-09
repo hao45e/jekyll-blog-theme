@@ -15,7 +15,11 @@ contact:
     target: "_blank"
   - title: GitHub
     icon: "fab fa-github"
-    link: https://hao45e.github.io/blog/
+    link: https://github.com/hao45e
+    target: "_blank"
+  - title: Blog
+    icon: fas fa-blog
+    link: https://hao45e.github.io/blog
     target: "_blank"
   - title: QQ
     icon: "fab fa-qq"

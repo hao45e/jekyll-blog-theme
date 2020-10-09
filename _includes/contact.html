@@ -1,6 +1,6 @@
 <div class="text-center my-contact">
     {% for item in site.data.info.contact %}
-    <a href="{{ item.link }}" data-tooltip title="{{ item.title }}" style="cursor: pointer; border: 0;">
+    <a href="{{ item.link }}" data-tooltip title="{{ item.title }}" style="cursor: pointer; border: 0;" target="{{ item.target }}">
         <i class="{{ item.icon }}"></i>
     </a>
     {% endfor %}
