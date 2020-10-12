@@ -1,5 +1,5 @@
 # Jekyll博客模版
-    我的博客日志记录模版
+    我的博客日志记录模版(停更，我去用hexo了)
 
 ## 前端
 * 响应式布局：Foundation
@@ -30,6 +30,7 @@ $ cd blog
 $ jekyll serve
 ```
 > 4. 将markdown的博客文件放入_posts目录下
+> > 文件命名格式例如2020-09-22-welcome-to-jekyll.md
 > > layout 使用layouts目录下的某个的布局 <br>
 > > title 标题 <br>
 > > categories 分类 <br>
